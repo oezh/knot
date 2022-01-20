@@ -35,7 +35,7 @@ $# `ls`
 file1 file2 file3 folder1 folder2  
   
 ## INSTALLATION
-`curl https://git.zhconsultores.com/oswaldo/Cifrar/raw/branch/master/installer.sh | bash`
+`curl https://raw.githubusercontent.com/oezh/knot/main/installer.sh | bash`
 
 ## REQUIREMENTS
 * Debian buster / Ubuntu 18 or older
