@@ -1,17 +1,16 @@
 # KNOT & UNKNOT
-`knot` and `unknot` are simple bash script wrapper for 7zip.  
-Just wanted a quick (lazy) way to simple compress and encrypt a file or group of files. Who has time to remember more command arguments? XD
-Same process to uncompress/decrypt.  
+`knot` and `unknot` are simple bash script wrappers for 7zip.  
+Just wanted a quick (lazy) way to simple compress and encrypt a file or group of files. Who has time to remember more command arguments? XD. 
 It uses AES256 (7zip default for .7f files), encrypt files headers to hide file structure and it deletes original files after completing the job.  
 
 
-## USE: knot
+## USAGE: knot
 `knot [file|folder|file1 file2 folder3...]`
 * Type output filename [first filename as default]
 * Type password, repeat.
 * Profit
 
-## USE: unknot
+## USAGE: unknot
 `unknot [file.7z]`
 * Type your password
 * Profit
