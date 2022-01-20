@@ -21,24 +21,24 @@ if [ -n "$(command -v apt-get)" ]; then
 	apt-get install -y p7zip-full >> $LOG 2>&1
 	echo "Downloading Binaries..."
 	echo ""
-	wget https://git.zhconsultores.com/oswaldo/Knot/raw/branch/master/bin/Debian/knot >> $LOG 2>&1
-	wget https://git.zhconsultores.com/oswaldo/Knot/raw/branch/master/bin/Debian/unknot >> $LOG 2>&1
+	wget https://github.com/oezh/knot/raw/main/bin/Debian/knot >> $LOG 2>&1
+	wget https://github.com/oezh/knot/raw/main/bin/Debian/unknot >> $LOG 2>&1
 
 elif [ -n "$(command -v pacman)" ]; then
 	pacman -Sy  >> $LOG 2>&1
 	pacman -S --noconfirm p7zip >> $LOG 2>&1
 	echo "Downloading Binaries..."
 	echo ""
-	wget https://git.zhconsultores.com/oswaldo/Knot/raw/branch/master/bin/Manjaro/knot >> $LOG 2>&1
-	wget https://git.zhconsultores.com/oswaldo/Knot/raw/branch/master/bin/Manjaro/unknot >> $LOG 2>&1
+	wget https://github.com/oezh/knot/raw/main/bin/Manjaro/knot >> $LOG 2>&1
+	wget https://github.com/oezh/knot/raw/main/bin/Manjaro/unknot >> $LOG 2>&1
 
 elif [ -n "$(command -v brew)" ]; then
 	brew update  >> $LOG 2>&1
 	brew install p7zip >> $LOG 2>&1
 	echo "Downloading Binaries..."
 	echo ""
-	wget https://git.zhconsultores.com/oswaldo/Knot/raw/branch/master/bin/MacOS/knot >> $LOG 2>&1
-	wget https://git.zhconsultores.com/oswaldo/Knot/raw/branch/master/bin/MacOS/unknot >> $LOG 2>&1
+	wget https://github.com/oezh/knot/raw/main/bin/MacOS/knot >> $LOG 2>&1
+	wget https://github.com/oezh/knot/raw/main/bin/MacOS/unknot >> $LOG 2>&1
 
 else
 	echo "Dependency not found: [apt|pacman|brew]"
